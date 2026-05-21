@@ -1,15 +1,41 @@
-let num = 1634
-function Armstrong(n){
-    let sum = 0
-    let nCopy = n
-      while(n>0){
-        let last_digit = n%10
-        n = Math.floor(n/10);
-        sum = sum + n**3
+let num = 36 
+function allDivisores(n){
+  for(let i=1;i<=n;i++){
+    if(n%i === 0){
+      console.log(i)
     }
-     if(sum === nCopy){
-        return true
-     }
-     return false
+  }
 }
-console.log(Armstrong(num))
+// allDivisores(num)
+
+function allDivisores2 (n){
+  for(let i=1;i*i<=n;i++){
+    if(n%i === 0){
+      console.log(i)
+      if(n/i !== i){
+        console.log(n/i)
+      }
+    }
+  }
+}
+
+// allDivisores2(num)
+
+function primeNumber (n){
+  let count = 0
+  for(let i=1;i*i<=n;i++){
+    if(n%i === 0){
+      count++
+      if(n/i !== i){
+        count++
+      }
+    }
+  }
+  if(count === 2){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(primeNumber(18))

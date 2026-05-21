@@ -47,3 +47,20 @@
     }
  }
  console.log(Palimdrome(n))
+
+ let num = 1634
+function Armstrong(n){
+    let sum = 0
+    let nCopy = n
+    let power = n.toString().length
+      while(n>0){
+        let last_digit = n%10
+        n = Math.floor(n/10);
+        sum = sum + last_digit**power
+    }
+     if(sum === nCopy){
+        return true
+     }
+     return false
+}
+console.log(Armstrong(num))
