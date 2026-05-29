@@ -25,4 +25,13 @@ function printN_to1(i,n){
     console.log(i)
     printN_to1(i-1,n)
 }
-printN_to1(4,4);
+// printN_to1(4,4);
+
+function printFrom1_to_n(i,n){
+    if(i>n){
+        return 
+    }
+    printFrom1_to_n(i+1,n)
+    console.log(i)
+}
+printFrom1_to_n(1,4)
