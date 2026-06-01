@@ -11,3 +11,4 @@ const queries = [1,2,12,6];
 for(let q of queries){
     console.log(hash[q])
 }
+
