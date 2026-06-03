@@ -1,4 +1,4 @@
-arr = ["abacaba"]
+str = "abacaba"
 
 const hash = new Array(25).fill(0)
 
@@ -10,5 +10,5 @@ for(let ch of str){
 const queries = ['a', 'b', 'c', 'd'];
 
 for(let q of queries){
-    console.log(hash[q])
+    console.log(hash[q.charCodeAt(0)- 97])
 }
