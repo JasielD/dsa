@@ -15,4 +15,4 @@ function selection_Sort (){
 }
 console.log(arr)
 selection_Sort();
-console.log(arr)
+console.log(arr);
